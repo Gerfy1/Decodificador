@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="assets/fav.ico" type="image/x-icon">
+    <script src="encoder.js" defer></script>
+</head>
+<body>
+    <header> 
+        <img class="logo__cabecalho" src="assets/icons8-google-48.png" alt="Logo Alura" srcset="">
+    </header>
+    <main class="codificador">
+        <section class="codificador__area">
+            <div class="codificador__area__textarea">  
+                <textarea name="textarea1" id="textarea1" cols="30" rows="15" placeholder="Digite seu texto:"></textarea>
+                <div class="decodificador__area">
+                    <img id="imgchat" class="imgchat" src="assets/High quality products 1 1.svg" alt="">
+                        <h1 id="ConteudoChatH1" class="decodificador__area__textarea__H1">Nenhuma mensagem encontrada
+                           <p id="ConteudoChatP" class="decodificador__area__textarea__P"> Digite um texto que você deseja criptografar ou descriptografar</p>
+                        </h1>
+                        <div class="resultado__texto" id="texto"></div>
+                        <button onclick="copiar()" class="resultado__texto__copiar" id="copiar">Copiar</button>
+                </div>
+                </div>
+                <div class="decodificador__area__aviso">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="exclamação de aviso" srcset="">
+                    Apenas letras minúsculas e sem acento.</div>
+            </div>
+                <div class="decodificador__botoes">
+                    <button onclick= "conteudoChat()" class="decodificador__botoes__criptografar" href="" id="criptografar">
+                        Criptografar
+                    </button>
+                    <button onclick= "conteudoChat()" class="decodificador__botoes__descriptografar" href="" id="descriptografar">
+                        Descriptografar
+                    </button>
+                </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Crafted with care and expertise by Gerfy</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
