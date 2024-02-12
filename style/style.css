@@ -214,9 +214,10 @@ textarea::placeholder{
 @media screen and (max-width: 768px) {
     .codificador__area__textarea {
         width: 100%; 
-        margin-bottom: 10px; 
+        margin-bottom: -144px; 
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+        align-content: center; 
     }
     .decodificador__area__aviso{
         display: flex;
@@ -227,8 +228,8 @@ textarea::placeholder{
         margin-left: -1rem;
     }
     textarea{
-        width: 100%; 
-        height: auto; 
+        width: 90%; 
+        height: 52%; 
         padding: 0px; 
     }
     .decodificador__botoes {
@@ -256,8 +257,8 @@ textarea::placeholder{
       font-weight: bolder;
       display: flex;
       flex-wrap: wrap;
-      width: 95%;
-      height: 36%;
+      width: 90%;
+      height: 33%;
       font-family: 'Inter', sans-serif;
       color: var(--cor-resultado);
       object-fit: fill;
@@ -269,13 +270,14 @@ textarea::placeholder{
     }
     .resultado__texto__copiar{
         display: none;
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         align-content: center;
-        margin-top: 12%;
+        margin-top: 14%;
+        padding-top: 12px;
+        padding-bottom: 12px;
         height: 0%;
         width: 60%;
     }
@@ -287,10 +289,9 @@ textarea::placeholder{
     display: none;
     }
 }
-@media screen and (max-width: 370px){
+@media screen and (max-width: 438px){
 .resultado__texto__copiar{
         display: none;
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -308,10 +309,9 @@ textarea::placeholder{
         font-size: 15px;
     }
 }
-@media screen and (max-width: 276px){
+@media screen and (max-width: 316px){
     .resultado__texto__copiar{
             display: none;
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
