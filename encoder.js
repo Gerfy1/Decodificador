@@ -4,6 +4,17 @@ let button2 = document.querySelector("#descriptografar")
 let resultado = document.querySelector('.resultado__texto');
 let copiar = document.querySelector("#copiar")
 
+textarea.addEventListener("keypress", function(event) {
+    const charCode = event.charCode;
+    if ((charCode >= 32 && charCode <= 126) || charCode === 13) {
+        // Permitindo caracteres padrões do ASCII e a tecla Enter (código 13)
+        return true;
+    } else {
+        // Bloquando os outros caracteres
+        event.preventDefault();
+        return false;
+    }
+});
 button.onclick = function(){
     resultado.textContent = criptografia(textarea.value);
     document.getElementById("imgchat").style.display = "none";
@@ -29,7 +40,7 @@ function criptografia(texto){
     texto = texto.replace(/o/g, "ober");
     texto = texto.replace(/u/g, "ufa");
 
-    return texto;
+    return texto.toLowerCase();
 }
 function descriptografia(texto){
     texto = texto.replace(/enter/g, "e");
@@ -38,7 +49,7 @@ function descriptografia(texto){
     texto = texto.replace(/ober/g, "o");
     texto = texto.replace(/ufa/g, "u");
     
-    return texto;
+    return texto.toLowerCase();
 }
 function conteudoChat(){
     document.getElementById("imgchat").style.display = "none";
@@ -48,156 +59,3 @@ function conteudoChat(){
 function copiarTexto(texto){
     navigator.clipboard.writeText(texto);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
