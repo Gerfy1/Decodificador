@@ -119,6 +119,16 @@ textarea::placeholder{
     border: 1.5px solid black;
     transition: 250ms linear;
 }
+.botao-desativado{
+    background-color: #ccc;
+    color: #888;
+    border: 0px solid #ccc;
+}
+.botao-desativado:hover{
+    background-color: #ccc;
+    border: 0px solid#ccc;
+    transition: 300ms linear;
+}
 .decodificador__area{
     position: relative;
     display: flex;
